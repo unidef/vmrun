@@ -45,9 +45,6 @@ usage:
 	URL         URL is the url of the web address of the $DISTRO installation image
 
 commands:
-(where rundebian12.aarch64.sh is the vmrun file in question)
-
-there is also a pids command which shows all running process ids of all qemu-system-aarch64 binaries!
 
 	download = download image specified in this script
 	format = format an image for use with qemu
@@ -63,6 +60,7 @@ there is also a pids command which shows all running process ids of all qemu-sys
 	vars = show almost all enviormental variables used in script
 	clean = deletes all files created by shell script
 	deltemp = deletes temporary iso file
+ 	pids = shows all process ids 
 
 
 
