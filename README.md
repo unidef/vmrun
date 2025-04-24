@@ -49,21 +49,20 @@ commands:
 
 there is also a pids command which shows all running process ids of all qemu-system-aarch64 binaries!
 
---- rundebian12.aarch64.sh download = download image specified in this script
---- rundebian12.aarch64.sh format = format an image for use with qemu
---- rundebian12.aarch64.sh install = install using iso specified in script
---- rundebian12.aarch64.sh copybash = copies script to vm dir
---- rundebian12.aarch64.sh dirs = create all required directories
---- rundebian12.aarch64.sh auto = automatically download an iso, format a 200G virtual drive, and, install the operating system (be sure to run this as root)
---- rundebian12.aarch64.sh kill = kills all qemu processes
---- rundebian12.aarch64.sh delIMAGES = deletes installation iso and disk images
---- rundebian12.aarch64.sh qemu = bootstraps qemu 10.0.0 in /Users/r_atkins/.qlocal
---- rundebian12.aarch64.sh run = runs the virtual machine and outputs its contents to the terminal
---- rundebian12.aarch64.sh boot = same thing as rundebian12.aarch64.sh run
---- rundebian12.aarch64.sh vars = show almost all enviormental variables used in script
---- rundebian12.aarch64.sh clean = deletes all files created by shell script
---- rundebian12.aarch64.sh deltemp = deletes temporary iso file
--------
+download = download image specified in this script
+format = format an image for use with qemu
+install = install using iso specified in script
+copybash = copies script to vm dir
+dirs = create all required directories
+auto = automatically download an iso, format a 200G virtual drive, and, install the operating system (be sure to run this as root)
+kill = kills all qemu processes
+delIMAGES = deletes installation iso and disk images
+qemu = bootstraps qemu 10.0.0 in /Users/r_atkins/.qlocal
+run = runs the virtual machine and outputs its contents to the terminal
+boot = same thing as rundebian12.aarch64.sh run
+vars = show almost all enviormental variables used in script
+clean = deletes all files created by shell script
+deltemp = deletes temporary iso file
 
 
 
