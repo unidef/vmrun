@@ -15,7 +15,7 @@ LOCALPREFIX=~/.qlocal
 QEMU_BINARY=$LOCALPREFIX/bin/qemu-system-aarch64
 QEMU_SOURCES="https://download.qemu.org/qemu-10.0.0.tar.xz"
 QEMU_SMP=8
-QEMU_MEM=1G
+QEMU_MEM=8G
 NETWORKDEV=en0
 QEMU_BIOS="edk2-aarch64-code.fd"
 #QEMU_BIOS="QEMU,cgthree.bin"
@@ -27,7 +27,7 @@ SND="-device intel-hda"
 NETDRIVER="e1000"
 QEMU_ACCEL="hvf"
 QEMU_VNC="-vnc 127.0.0.1:4"
-QEMU_CMD="$QEMU_BINARY -smp $QEMU_SMP -device $NETDRIVER,netdev=eth0 -netdev vmnet-bridged,ifname=eth0,id=eth0,ifname=$NETWORKDEV -M virt,highmem=off -cpu host -accel $QEMU_ACCEL -bios $QEMU_BIOS -m $QEMU_MEM -nographic $FASTHDDEV $SND $QEMU_VNC -boot c"
+QEMU_CMD="$QEMU_BINARY -smp $QEMU_SMP -device $NETDRIVER,netdev=eth0 -netdev vmnet-bridged,ifname=eth0,id=eth0,ifname=$NETWORKDEV -M virt -cpu host -accel $QEMU_ACCEL -bios $QEMU_BIOS -m $QEMU_MEM -nographic $FASTHDDEV $SND $QEMU_VNC -boot c"
 
 TERM_OPEN="osascript -e 'tell app "Terminal" to do script "$QEMU_CMD"'"
 

@@ -14,7 +14,7 @@ LOCALPREFIX=~/.qlocal
 
 QEMU_BINARY=$LOCALPREFIX/bin/qemu-system-aarch64
 QEMU_SOURCES="https://download.qemu.org/qemu-10.0.0.tar.xz"
-QEMU_SMP=8
+QEMU_SMP=12
 QEMU_MEM=8G
 NETWORKDEV=en0
 QEMU_BIOS="edk2-aarch64-code.fd"
