@@ -1,4 +1,4 @@
-#A!/bin/bash
+#!/bin/bash
 
 DISTRO=freebsd14-aarch64
 VMPATH=/Volumes/M2/virt
